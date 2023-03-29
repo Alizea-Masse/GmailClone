@@ -18,7 +18,7 @@ function Header() {
         </div>
         <div className="header__middle">
           <SearchIcon />
-          <input type="text" placeholder="Rechercher un mail" />
+          <input type="text" placeholder="Rechercher dans les messages" />
           <ArrowDropDownIcon className="header__inputCaret" />
         </div>
         <div className="header__right">

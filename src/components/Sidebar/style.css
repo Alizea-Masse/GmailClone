@@ -1,0 +1,32 @@
+
+.sidebar__button {
+    display: flex;
+    gap: .5em;
+    margin-top: 15px !important;
+    margin-left: 10px !important;
+    margin-bottom: 15px !important;
+    text-transform: capitalize !important;
+    color: black !important;
+    background-color: #bee6f0 !important;
+    border-radius: 15px !important;
+    padding-left: 10px !important;
+    padding-right: 20px !important;
+}
+
+.sidebar__button:hover {
+    box-shadow:  1px 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+
+
+.sidebar__compose {
+    margin-top: 15px ;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    
+}
+
+.sidebar__footer {
+    display: flex;
+    justify-content: center;
+}

@@ -58,3 +58,10 @@
     flex: 1;
     
 }
+
+.sendMail__error {
+    background-color: #fff;
+    color: red;
+    font-size: 12px;
+    text-align: right;
+}

@@ -14,10 +14,14 @@ import DuoOutlinedIcon from "@mui/icons-material/DuoOutlined";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import IconButton from "@mui/material/IconButton";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { openSendMessage } from "../../features/mailSlice";
+import { useDispatch } from "react-redux";
 function Sidebar() {
+  const dispatch = useDispatch();
+
   return (
     <div className="sidebar">
-      <Button
+      <Button onClick={() => dispatch(openSendMessage())}
         className="sidebar__button"
         startIcon={
           <CreateOutlinedIcon fontSize="large" className="sidebar__compose" />

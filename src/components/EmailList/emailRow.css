@@ -29,6 +29,8 @@ width: 400px;
 white-space: nowrap;
 overflow: hidden;
 text-overflow: ellipsis;
+padding-left: 5px ;
+padding-right: 5px;
 }
 
 .emailRow__title {
@@ -39,7 +41,7 @@ text-overflow: ellipsis;
 
 .emailRow__time{
     font-size: 14px;
-    flex: 0.2;
+    
     text-align: right;
 }
 

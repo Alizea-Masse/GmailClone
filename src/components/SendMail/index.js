@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { closeSendMessage } from "../../features/mailSlice";
 import { useDispatch } from "react-redux";
 import { db } from "../../firebase";
+import firebase from "firebase/compat/app";
 
 function SendMail() {
 
@@ -27,8 +28,9 @@ function SendMail() {
         to: formData.to,
         subject: formData.subject,
         message: formData.message,
-        timestamp: new Date(),
+        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
+    dispatch(closeSendMessage());
   };
   return (
     <div className="sendMail">
